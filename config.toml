@@ -1,4 +1,4 @@
-baseURL = 'https://mille535.github.io/'
+baseURL = 'https://kmil.us/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Kirk Miller'
 theme = "m10c"
