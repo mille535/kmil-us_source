@@ -29,9 +29,9 @@ paginate = 5
 [languages]
   [languages.en]
     title = "Kirk Miller"
-    subtitle = "A simple theme for Hugo"
+    subtitle = ""
     keywords = ""
-    copyright = ""
+    copyright = "2022 Kirk Miller"
     menuMore = "Show more"
     writtenBy = "Written by"
     readMore = "Read more"
@@ -57,7 +57,7 @@ paginate = 5
         identifier = "about"
         name = "About"
         url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+    #  [[languages.en.menu.main]]
+    #    identifier = "showcase"
+    #    name = "Showcase"
+    #    url = "/showcase"
