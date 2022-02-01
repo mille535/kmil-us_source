@@ -13,7 +13,7 @@ Simply edit the AD query on line 2 to suit the needs of your environment and pop
 
 Disclaimer: Use this code at your own risk. 
 
-{{< highlight powershell "linenos=table" >}}
+{{< code language="powershell" title="Really cool snippet" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
 Import-Module ActiveDirectory
 $computers = get-adcomputer -Filter 'operatingsystem -notlike "*server*" -and enabled -eq "true"' -SearchBase "CN=Computers,DC=domain,DC=tld" | Select-Object -Expand DNSHostName
 
@@ -38,7 +38,7 @@ foreach ( $computer in $computers ) {
     }
     Remove-PSSession $session -ErrorAction SilentlyContinue
 }
-{{< / highlight >}}
+{{< /code >}}
 
 After writing this script I got curios to see what others have been doing and found the links below to interesting scripts.
 
