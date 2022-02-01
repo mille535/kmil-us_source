@@ -62,3 +62,20 @@ googleAnalytics = "G-4MK7WX28GY"
     #    identifier = "showcase"
     #    name = "Showcase"
     #    url = "/showcase"
+    
+
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'monokai'
+    tabWidth = 4
+
