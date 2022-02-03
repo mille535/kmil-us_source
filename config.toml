@@ -31,8 +31,8 @@ googleAnalytics = "G-4MK7WX28GY"
   [languages.en]
     title = "Kirk Miller"
     subtitle = ""
-    keywords = ""
-    copyright = "2022 Kirk Miller"
+    keywords = "blog,technology,devops,powershell,sysadmin,network,coding,automation"
+    copyright = "Kirk Miller 2022"
     menuMore = "Show more"
     writtenBy = "Written by"
     readMore = "Read more"
@@ -43,7 +43,7 @@ googleAnalytics = "G-4MK7WX28GY"
     dateFormatSingle = "2006-01-02"
     dateFormatList = "2006-01-02"
     # leave empty to disable, enter display text to enable
-    # lastModDisplay = ""
+    lastModDisplay = "true"
 
     [languages.en.params.logo]
       logoText = "Kirk Miller"
@@ -54,14 +54,14 @@ googleAnalytics = "G-4MK7WX28GY"
     # alt = "Your example logo alt text"
 
     [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-    #  [[languages.en.menu.main]]
-    #    identifier = "showcase"
-    #    name = "Showcase"
-    #    url = "/showcase"
+#      [[languages.en.menu.main]]
+#        identifier = "about"
+#        name = "About"
+#        url = "/about"
+#      [[languages.en.menu.main]]
+#        identifier = "showcase"
+#        name = "Showcase"
+#        url = "/showcase"
     
 
 

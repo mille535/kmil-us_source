@@ -1,5 +1,5 @@
 ---
-title: "ConnectWise Automate Install Script"
+title: "ConnectWise Agent Install Script"
 date: 2022-02-01T11:58:27-06:00
 draft: false
 ---
@@ -13,32 +13,7 @@ Simply edit the AD query on line 2 to suit the needs of your environment and pop
 
 Disclaimer: Use this code at your own risk. 
 
-```powershell
-Import-Module ActiveDirectory
-$computers = get-adcomputer -Filter 'operatingsystem -notlike "*server*" -and enabled -eq "true"' -SearchBase "CN=Computers,DC=domain,DC=tld" | Select-Object -Expand DNSHostName
-
-foreach ( $computer in $computers ) {
-    $session = New-PSSession -ComputerName $computer -ErrorAction SilentlyContinue
-	
-    Invoke-Command -Session $session -ErrorAction SilentlyContinue -ScriptBlock {
-        [String]$downloadlink = '<enter your agent install dl url>
-        [string]$OutFile = 'Agent_Install.exe'
-        [string]$instargs = '/s'
-        $OutPath = $env:TMP
-        
-        If (Test-Path c:\windows\ltsvc\ltsvc.exe) {
-            Write-Output "CW Agent already installed on $env:computername"	
-        }
-        Else {
-            Invoke-WebRequest -Uri $downloadlink -OutFile $OutPath\$OutFile -ErrorAction SilentlyContinue
-            Start-Process -NoNewWindow -FilePath $OutPath\$OutFile -ArgumentList $instargs -Wait -ErrorAction SilentlyContinue
-            Write-Output "CW Agent has been installed on $env:computername"
-        }
-		
-    }
-    Remove-PSSession $session -ErrorAction SilentlyContinue
-}
-```
+{{< gist mille535 25419ed2eb3a7c26d4e9c9de5da66b52 >}}
 
 After writing this script I got curios to see what others have been doing and found the links below to interesting scripts.
 
