@@ -1,7 +1,34 @@
 ---
 title: "ConnectWise Agent Install Script"
 date: 2022-02-01T11:58:27-06:00
+# weight: 1
+# aliases: ["/first"]
+author: "Kirk"
+showToc: false
+TocOpen: false
 draft: false
+hidemeta: false
+comments: false
+description: "A quick script to deploy CW Agent using AD and PSRemoting"
+canonicalURL: "https://blog.kmil.us/posts/connectwise-agent-install-script/"
+disableHLJS: true # to disable highlightjs
+disableShare: false
+disableHLJS: false
+hideSummary: false
+searchHidden: false
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+#cover:
+#    image: "<image path/url>" # image path/url
+#    alt: "<alt text>" # alt text
+#    caption: "<text>" # display caption under cover
+#    relative: false # when using page bundles set this to true
+#    hidden: true # only hide on current single page
+#editPost:
+#    URL: "https://github.com/<path_to_repo>/content"
+#    Text: "Suggest Changes" # edit text
+#    appendFilePath: true # to append file path to Edit link
 ---
 One would think working in IT would make me a patient person. Today I found myself tired of waiting for the ConnectWise Automate agents to be deployed for a customer. Normally I push these agent-type installs using group policy which is fine in most cases. 
 
@@ -13,7 +40,34 @@ Simply edit the AD query on line 2 to suit the needs of your environment and pop
 
 Disclaimer: Use this code at your own risk. 
 
-{{< gist mille535 25419ed2eb3a7c26d4e9c9de5da66b52 >}}
+```powershell
+Import-Module ActiveDirectory
+$computers = get-adcomputer `
+-Filter 'operatingsystem -notlike "*server*" -and enabled -eq "true"' `
+-SearchBase "CN=Computers,DC=domain,DC=tld" | Select-Object -Expand DNSHostName
+
+foreach ( $computer in $computers ) {
+    $session = New-PSSession -ComputerName $computer -ErrorAction SilentlyContinue
+	
+    Invoke-Command -Session $session -ErrorAction SilentlyContinue -ScriptBlock {
+        [String]$downloadlink = '<enter your agent install dl url>'
+        [string]$OutFile = 'Agent_Install.exe'
+        [string]$instargs = '/s'
+        $OutPath = $env:TMP
+        
+        If (Test-Path c:\windows\ltsvc\ltsvc.exe) {
+            Write-Output "CW Agent already installed on $env:computername"	
+        }
+        Else {
+            Invoke-WebRequest -Uri $downloadlink -OutFile $OutPath\$OutFile -ErrorAction SilentlyContinue
+            Start-Process -NoNewWindow -FilePath $OutPath\$OutFile -ArgumentList $instargs -Wait -ErrorAction SilentlyContinue
+            Write-Output "CW Agent has been installed on $env:computername"
+        }
+		
+    }
+    Remove-PSSession $session -ErrorAction SilentlyContinue
+}
+```
 
 After writing this script I got curios to see what others have been doing and found the links below to interesting scripts.
 
