@@ -9,8 +9,8 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "test"
-#canonicalURL: "https://blog.kmil.us/posts/ESET-Protect-LetsEncrypt/"
+description: "ESET Protect version 9.0.10.3 running on Microsoft Windows Server 2019"
+canonicalURL: "https://blog.kmil.us/posts/eset-protect-letsencrypt/"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
@@ -32,8 +32,6 @@ tags: [windows, certbot, letsencrypt, eset, protect, era, esmc, powershell]
 #    Text: "Suggest Changes" # edit text
 #    appendFilePath: true # to append file path to Edit link
 ---
-ESET Protect version 9.0.10.3 running on Microsoft Windows Server 2019. 
-
 Create directories for the ACME challenge to be presented.
 
 {{< highlight powershell >}}
