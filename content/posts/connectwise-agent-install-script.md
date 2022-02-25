@@ -19,8 +19,8 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-categories: [powershell]
-tags: [powershell, Active Directory, PSRemoting, Connectwise, LabTech]
+categories: [Powershell]
+tags: [Powershell, Active Directory, PSRemoting, Connectwise, LabTech, WinRM]
 #cover:
 #    image: "<image path/url>" # image path/url
 #    alt: "<alt text>" # alt text

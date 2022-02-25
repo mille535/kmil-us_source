@@ -19,8 +19,8 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-categories: [Letsencrypt, Windows]
-tags: [windows, certbot, letsencrypt, eset, protect, era, esmc, powershell]
+categories: [Let’s Encrypt]
+tags: [Windows Server, Certbot, Let’s Encrypt, ESET, Powershell, Apache Tomcat, SSL]
 #cover:
 #    image: "<image path/url>" # image path/url
 #    alt: "<alt text>" # alt text
