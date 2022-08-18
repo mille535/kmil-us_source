@@ -41,5 +41,6 @@ Here are a couple of useful resources I have found and used pertaining to the St
  - [Deck Drive Manager](https://deckdrivemanager.com/) - Copy Steam Games from Your PC to Your Steam Deck SD Card. Required 3rd party software to access EXT4 partitions on Windows. Unfortunately, WSL2 doesn't deal well with removable media at the time I tried to use it.
  - [Check My Deck](https://checkmydeck.herokuapp.com/) - Allows you to check compatibility of your existing steam library without having to search each title on protondb individually.
  - [Get My Deck](https://getmydeck.ingenhaag.dev/) - Check the status of your Deck order. Based off community sourced information so may not be 100% accurate but it was for me. 
+ - [ShareDeck](https://sharedeck.games/) - Community sourced game and performance settings for Steam Deck. Useful if you want to optimize games for battery life.
  - [/r/steamdeck](https://reddit.com/r/steamdeck) - The main subreddit for all things Steam Deck related. 
  - [@OnDeck](https://twitter.com/OnDeck) - The offical Steam Deck Twitter Account.
