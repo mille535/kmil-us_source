@@ -32,6 +32,8 @@ tags: [SteamDeck, Valve]
 #    Text: "Suggest Changes" # edit text
 #    appendFilePath: true # to append file path to Edit link
 ---
+UPDATED:8-26-2022
+ 
 I finally received my Valve Steam Deck. There are lots of cool tidbits out there already so I will likely not be creating any content about it—unless I decide to turn it into a hypervisor or something cool like that! 
 
 Here are a couple of useful resources I have found and used pertaining to the Steam Deck:
@@ -45,3 +47,4 @@ Here are a couple of useful resources I have found and used pertaining to the St
  - [/r/steamdeck](https://reddit.com/r/steamdeck) - The main subreddit for all things Steam Deck related. 
  - [@OnDeck](https://twitter.com/OnDeck) - The offical Steam Deck Twitter Account.
  - [IsThereAnyDeal](https://isthereanydeal.com/) - Site that tracks online stores for deals on games. 
+ - [Steam Deck HQ](https://steamdeckhq.com/) - Curated game settings, Deck news, tips and trick. 
