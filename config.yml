@@ -126,6 +126,9 @@ menu:
     - identifier: search
       name: search
       url: /search/
+    - identifier: contact
+      name: contact
+      url: /contact/
     #- identifier: example
       #name: example.org
       #url: https://example.org
