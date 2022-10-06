@@ -126,9 +126,11 @@ menu:
     - identifier: search
       name: search
       url: /search/
+      weight: 30
     - identifier: contact
       name: contact
       url: /contact/
+      weight: 40
     #- identifier: example
       #name: example.org
       #url: https://example.org
