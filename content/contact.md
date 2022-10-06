@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 date: 2022-10-05T21:35:03Z
-draft: true
+draft: false
 ---
 
 {{< rawhtml >}}

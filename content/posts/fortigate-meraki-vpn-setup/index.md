@@ -20,7 +20,7 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 categories: [Networking]
-tags: [Cisco, Fortinet, FortiGate, Meraki, VPN, S2S]
+tags: [Cisco, Fortinet, FortiGate, Meraki, VPN, S2S, site-to-site]
 #cover:
 #    image: "<image path/url>" # image path/url
 #    alt: "<alt text>" # alt text

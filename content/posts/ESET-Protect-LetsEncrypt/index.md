@@ -19,7 +19,7 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-categories: [Let’s Encrypt]
+categories: [Automation]
 tags: [Windows Server, Certbot, Let’s Encrypt, ESET, Powershell, Apache Tomcat, SSL]
 #cover:
 #    image: "<image path/url>" # image path/url
@@ -105,4 +105,4 @@ Certbot should have already setup its own scheduled task to check and renew cert
 
 All Done!
 
-{{< figure src="/images/2022/02/tomcatsslreport.png" title="SSL Labs Grade" >}}
+{{< figure src="tomcatsslreport.png" title="SSL Labs Grade" >}}

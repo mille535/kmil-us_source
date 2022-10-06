@@ -19,8 +19,8 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-categories: [ESET]
-tags: [ESET, Powershell]
+categories: [Automation]
+tags: [ESET, Powershell, Batch]
 #cover:
 #    image: "<image path/url>" # image path/url
 #    alt: "<alt text>" # alt text
@@ -49,10 +49,10 @@ ECHO Start-Process -NoNewWindow -FilePath $OutPath\$OutFile -ArgumentList $insta
 
 From the ESET Protect interface click on `Tasks`, then `New`, and finally `Client Task`. For Task Category choose `Operating System` and for Task select `Run Command` and then click `Continue`.
 
-{{< figure src="/images/2022/02/esets1.png" >}}
+{{< figure src="esets1.png" >}}
 
 On the next page paste your cleverly disguised Powershell script into the `Command line to run` box. 
 
-{{< figure src="/images/2022/02/esets2.png" >}}
+{{< figure src="esets2.png" >}}
 
 From there you handle the task like any other on ESET Protect creating a trigger and monitoring from the `Tasks` section. 

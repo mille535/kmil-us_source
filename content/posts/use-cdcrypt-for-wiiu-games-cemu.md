@@ -19,8 +19,8 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-categories: [Emulation]
-tags: [Wii U, cemu]
+categories: [Gaming]
+tags: [Wii U, cemu, emulation]
 #cover:
 #    image: "<image path/url>" # image path/url
 #    alt: "<alt text>" # alt text
