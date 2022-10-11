@@ -60,8 +60,6 @@ New-ItemProperty -Path $RegPath -Name $Name -Value $Value -PropertyType DWORD -F
 ```
 
 References
-[Deprecation of Basic authentication in Exchange Online](https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online)
-
-[How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](https://learn.microsoft.com/en-us/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016?view=o365-worldwide)
-
-[Enable Modern authentication for Office 2013 on Windows devices](https://learn.microsoft.com/en-us/microsoft-365/admin/security-and-compliance/enable-modern-authentication?view=o365-worldwide)
+ - [Deprecation of Basic authentication in Exchange Online](https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online)
+ - [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](https://learn.microsoft.com/en-us/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016?view=o365-worldwide)
+ - [Enable Modern authentication for Office 2013 on Windows devices](https://learn.microsoft.com/en-us/microsoft-365/admin/security-and-compliance/enable-modern-authentication?view=o365-worldwide)
